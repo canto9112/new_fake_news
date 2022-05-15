@@ -4,6 +4,8 @@ DEFAULT_BLACKLIST_TAGS = [
 ]
 
 DEFAULT_UNWRAPLIST_TAGS = [
+    'a',
+    '<div>',
     'div',
     'p',
     'span',
