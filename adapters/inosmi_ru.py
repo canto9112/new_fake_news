@@ -8,8 +8,7 @@ from .html_tools import remove_buzz_attrs, remove_buzz_tags, remove_all_tags
 
 def sanitize(html, plaintext=False):
     soup = BeautifulSoup(html, 'html.parser')
-    articles = soup.select("article.article")
-
+    articles = soup.select(".layout-article__main")
     if len(articles) != 1:
         raise ArticleNotFound()
 
